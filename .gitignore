@@ -1,62 +1,63 @@
-# A gitignore for Altera Quartus II that tries to ignore almost all of the
-# automatically Quartus-generated files. This primarily leaves the project,
-# settings, source, and constraint files to be added. The files ignored do not
-# include the bulk of the MegaFunction Wizard generated files which enables
-# a cloned repository to be used (usually) immediately without regenerating
-# Altera IP blocks.
+# Prerequisites
+*.d
 
-# Need to keep all HDL files and timing constraint files
-# *.vhd
-# *.v
-# *.sdc
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
 
-# ignore Quartus II generated folders
-*_sim
-db
-greybox_tmp
-incremental_db
-simulation
-testbench
-timing
-msim_transcript
+# Linker output
+*.ilk
+*.map
+*.exp
 
-# ignore Quartus II generated files
-*_generation_script*
-*_inst.vhd
-*.bsf
-*.bdf
-*.bak
-*.cmp
-*.cdf
-*.done
-*.eqn
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
 *.hex
-*.html
-*.jdi
-*.jpg
-*.mif
-*.pin
-*.pof
-*.ptf.*
-*.qar
-*.qarlog
-*.qws
-*.qsf
-*.qpf
-*.rpt
-*.sld
-*.smsg
-*.sof
-*.sopc_builder
-*.summary
-*.tcl
-*.txt # Explicitly add any text files used
-*.xml
-*~
-*example*
-*sopc_*
-PLLJ_PLLSPE_INFO.txt # The generated PLL specification file
 
-# MAC-File
-*.DS_Store
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# OSX File
 .DS_Store
+
+# CodeBlox
+*.layout
+*.depend
+bin/Debug/ueb01
+*.cbp
+IN2/bin/Debug/uebXX
+IN2/save_teams.xml
